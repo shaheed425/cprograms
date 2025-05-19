@@ -10,27 +10,18 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-    int i,j,size=5,k,l;
-    for(i=1;i<=5;i++){
-        
-        for(j=1;j<=i;j++){
-            
-            printf(" *");
-            
+    int i,j,k,size=5;
+    for(i=0;i<=size;i++){
+        for(j=0;j<=size-i;j++){
+            printf(" ");
         }
+        for(k=0;k<=i;k++){
+            printf("%d",i);
+        } 
         printf("\n");
-        
-        
+
         
     }
-    for(k=1;k<=5;k++){
-        for(l=1;l<=size-k;l++){
-            printf(" *");
-        }
-        printf("\n");
-    }
-    
-    
     
 
     return 0;
