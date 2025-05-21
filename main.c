@@ -10,12 +10,12 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-    int i,j,size=5;
-    for(i=1;i<=5;i++){
-        for(j=1;j<=i;j++){
-            printf(" %d",i);
-        }
-        printf("\n");
+    int age=18;
+    if(age>=18){
+        printf("eligible for voting");
+    }
+    else{
+        printf("not eligible");
     }
 
     return 0;
