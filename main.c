@@ -10,13 +10,19 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-    int age=18;
-    if(age>=18){
-        printf("eligible for voting");
-    }
-    else{
-        printf("not eligible");
-    }
+   int num1=128;
+   int num2=159;
+   int num3=20;
+   if(num1>num2 && num1>num3){
+       printf("num1 is greater");
+   }
+   else if(num2>num1 && num2>num3){
+       printf("num2 is bigger");
+   }
+   else{
+       printf("num3 is bigger");
+   }
+   
 
     return 0;
 }
