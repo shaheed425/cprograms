@@ -10,19 +10,12 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-   int num1=128;
-   int num2=159;
-   int num3=20;
-   if(num1>num2 && num1>num3){
-       printf("num1 is greater");
-   }
-   else if(num2>num1 && num2>num3){
-       printf("num2 is bigger");
+   int year=2024;
+   if(year%4==0 && year%100!=0 || year%400==0){
+       printf("leap year");
    }
    else{
-       printf("num3 is bigger");
+       printf("not leap year");
    }
-   
-
     return 0;
 }
