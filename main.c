@@ -10,18 +10,31 @@ Welcome to GDB Online.
 
 int main()
 {
-    float h;
-    printf("enter your height in centimeter :");
-    scanf("%f",&h);
-    if(h<150){
-        printf(" your very short");
-    }
-    else if(h>=150 && h<=170){
-        printf(" your average");
+    int total,total1,maths,chemistry,physics;
+    printf("enter obtained mark in maths:");
+    scanf("%d",&maths);
+    
+    printf("enter obtained mark of chemistry :");
+    scanf("%d",&chemistry);
+    
+    printf("enter obtained mark of physics :");
+    scanf("%d",&physics);
+    
+    total=maths+chemistry+physics;
+    total1=maths+physics;
+    
+    printf("total of all subjects is :%d\n",total);
+    printf("total of maths and physics subjects is :%d\n",total1);
+    
+    if(maths>=65 && physics>=55 && chemistry>=50 && total>= 190 || total1>=140){
+    printf("eligible for professional course");
     }
     else{
-        printf("your very tall");
+        printf("not eligible");
     }
+
+
+
 
     return 0;
 }
