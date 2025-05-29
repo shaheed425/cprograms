@@ -10,19 +10,18 @@ Welcome to GDB Online.
 
 int main()
 {
-    int m,n;
-    printf("enter a number:");
-    scanf("%d",&m);
-    if(m>0){
-        n=1;
+    float h;
+    printf("enter your height in centimeter :");
+    scanf("%f",&h);
+    if(h<150){
+        printf(" your very short");
     }
-    else if(m==0){
-        n=0;
+    else if(h>=150 && h<=170){
+        printf(" your average");
     }
     else{
-        n=-1;
+        printf("your very tall");
     }
-    printf("%d",n);
 
     return 0;
 }
